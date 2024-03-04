@@ -1,0 +1,28 @@
+<h2>Long Running Component</h2>
+<table>
+  <tbody>
+    <tr>
+      <td>
+        @if((justOnServer | async) === true) {
+        <span class="red">Just on Server (if)</span>
+        } 
+      </td>
+      <td>
+        @if((justOnClient | async) === true) {
+        <span class="green">Just on Client (if)</span>
+        }
+      </td>
+    </tr>
+    <tr>
+      <td>
+        @if((justOnServer | async) === false) { } @else {
+        <span class="red">Just on Server (else)</span>}
+      </td>
+      <td>
+        @if((justOnClient | async) === false) { } @else {
+        <span class="green">Just on Client (else)</span>
+        }
+      </td>
+    </tr>
+  </tbody>
+</table>

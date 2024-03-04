@@ -1,0 +1,12 @@
+.tenant-scss {
+    background-color: blue;
+}
+body {
+    --dt-not-used-color: red;
+    .tenant2-scss {
+        background-color: green;
+    }
+}
+:root {
+    --dt-not-used-color2: rgb(23, 204, 74);
+}
